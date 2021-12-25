@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root{
+    /* Colors */
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+
+        /* Typography */
+        
+        /* Body Font */
+    --regular-font: 'Open Sans', sans-serif;
+
+        /* Headings Font */
+    --heading-font: 'Poppins', sans-serif;
+    --heading-semi-bold: 600;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--violet);
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    font-family: var(--regular-font);
+    color: white;
+    padding: 2.25em;
+    text-align: center;
+}
+
+.heading{
+    font-family: var(--heading-font);
+    font-size: 1.5rem;
+    font-weight: var(--heading-semi-bold);
+    margin-bottom: 1em;
+}
+
+.description{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2em;
+    line-height: 1.5;
+}
+
+a.cta{
+    background-color: white;
+    border-radius: 5em;
+    box-shadow: 3px 3px 3px 0px #3c3c3c;
+    color: var(--violet);
+    display: inline-block;
+    font-family: var(--heading-font);
+    font-size: .85em;
+    padding: 1em 6em;
+    text-decoration: none;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
+}
+
+header,
+.hero {
+    width: 100%;
+}
+
+.logo{
+    display: block;
+    width: 8em;
+    text-align: left;
+}
+
+section{
+    margin-top: 3em;
+}
+
+.social-media{
+    margin-top: 5em;
+}
+
+.social-media i{
+    display: inline-block;
+    width: 2em;
+    margin-right: .5em;
+    padding: .5em;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
