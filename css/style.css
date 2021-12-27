@@ -28,10 +28,12 @@ body{
     background-color: var(--violet);
     background-image: url(/images/bg-mobile.svg);
     background-repeat: no-repeat;
+    background-size: 100%;
     font-family: var(--regular-font);
     color: white;
     padding: 2.25em;
     text-align: center;
+    /* height: 100vh; */
 }
 
 .heading{
@@ -65,7 +67,7 @@ a.cta{
 }
 
 header,
-.hero {
+.hero-img {
     width: 100%;
 }
 
@@ -75,11 +77,15 @@ header,
     text-align: left;
 }
 
-section{
+main{
+    margin-top: 3.5em;
+}
+
+.intro{
     margin-top: 3em;
 }
 
-.social-media{
+footer.social-media{
     margin-top: 5em;
 }
 
@@ -95,3 +101,81 @@ section{
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
+
+@media all and (min-width: 768px){
+    body{
+        padding: 3em 6em 5em 5em;
+        background-image: url(/images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+
+    header,
+    .social-media,
+    .hero-img {
+        width: 100%;
+    }
+
+    header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* padding: 2em 4em; */
+    }
+
+    .logo{
+        display: block;
+        width: 10em;
+        text-align: left;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* grid-gap: 2em; */
+        /* padding: 2em 2em; */
+    }
+    .hero{
+        grid-column: 1 / 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3em;
+        padding-right: 2em;
+    }
+
+    .hero-img{
+        width: 100%;
+    }
+
+    .intro{
+        grid-column: 2 / 3;
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+    }
+
+    .social-media{
+        width: 100%;
+        text-align: right;
+    }
+
+    .heading{
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .description{
+        font-size: 1.25rem;
+        text-align: left;
+    }
+
+    a.cta{
+        display: inline-block;
+        width: 12em;
+        font-size: 1rem;
+        padding: .75em 3em;
+    }
+}
+    
